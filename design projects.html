@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gallery of my design</title>
+<style>
+body {
+	margin: 3;
+}
+
+.image-grid {
+	--gap: 16px;
+	--num-cols: 4;
+	--row-height: 300px;
+
+	box-sizing: border-box;
+	padding: var(--gap);
+
+	display: grid;
+	grid-template-columns: repeat(var(--num-cols), 1fr);
+	grid-auto-rows: var(--row-height);
+	gap: var(--gap);
+}
+
+.image-grid>img {
+	width: 90%;
+	height: 90%;
+	object-fit: cover;
+}
+
+.image-grid-col-2 {
+	grid-column: span 2;
+}
+
+.image-grid-row-2 {
+	grid-row: span 2;
+}
+
+/* Anything udner 1024px */
+@media screen and (max-width: 1024px) {
+	.image-grid {
+		--num-cols: 2;
+		--row-height: 200px;
+	}
+}
+</style>
+</head>
+<body style="background-color: black ; ">
+    
+   
+        <div class="image-grid">
+            <img class="image-grid-col-2 image-grid-row-2" src="images\design\4399791.jpg" alt="architecture">
+            <img src="images\design\Artboard 1.png" alt="architecture">
+            <img src="images\design\Artboard 3.png" alt="architecture">
+            <img src="images\design\menupng.png" alt="architecture">
+            <img src="images\design\seafood restaurant.png" alt="architecture">
+        </div>
+        <div class="image-grid">
+            <img class="image-grid-col-2 image-grid-row-2" src="images\design\callendrie.png" alt="architecture">
+            <img src="images\design\spa.png" alt="architecture">
+            <img src="images\design\max style.jpg" alt="architecture">
+            <img src="images\design\cart.png" alt="architecture">
+            <img src="images\design\simpl.JPG" alt="architecture">
+        </div>
+    
+</body>
+</html>
