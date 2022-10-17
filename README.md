@@ -1,5 +1,5 @@
 # 💫About Me :
-Hi ! I am a data science student and a web development enthousiast
+Hi ! I am an Embaded system engeniering student and a web development enthousiast
 
 
 # 💻Tech Stack
